@@ -904,12 +904,8 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
-## Cloud
 
-## IDE
-
-
-## Browser Use
+## 十七、Browser Use
 
 > 由于当前 Windows 环境中 Browser Use 暂时无法使用，这里仅作为补充能力介绍。
 
@@ -921,7 +917,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 - 查看页面反馈
 - 根据页面结果判断功能是否正常
 
-## Computer Use
+## 十八、Computer Use
 
 > 由于当前 Windows 环境中 Computer Use 暂时无法使用，这里仅作为补充能力介绍。
 
