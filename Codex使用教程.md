@@ -573,7 +573,7 @@ Codex App 的内置浏览器可以用来打开和预览本地运行的 Web 应�
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
-## 十一、MCP （TODO）
+## 十一、MCP
 
 ### 11.1 什么是 MCP
 
