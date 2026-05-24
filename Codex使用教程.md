@@ -678,7 +678,7 @@ Codex 默认可以读取和修改本地项目文件、运行终端命令、分�
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
 
-## 十二、Review TODO
+## 十三、Review
 
 现在，预约信息已经可以成功写入 Supabase 数据库了。应用的核心功能已经完成，在继续部署之前，我们先让 Codex 对当前项目做一次 Review，检查是否还存在明显问题。
 
@@ -697,17 +697,29 @@ Codex 默认可以读取和修改本地项目文件、运行终端命令、分�
 
 通过 Review，我们可以在应用上线前先发现一部分问题，减少后续返工。
 
+当然你也可以手动 Review。
+
+<img src="./images/review位置.png">
+
+找到需要修改的位置，点击 `+`，然后输入 Comment，告诉 Codex 如何修改。
+
+<img src="./images/comment.png">
+
+点击提交 Comment 后，可以看到这个 Comment 会被添加到输入框中，你可以发送这个消息，让 Codex 参考这个 Comment 今昔修改。
+
+<img src="./images/提交comment.png">
+
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
-## 十三、Plugin
+## 十四、Plugin
 
 完成代码检查后，我们已经拥有了一个可以正常运行的预约应用。接下来，如果我们希望让 Codex 参与本地项目之外的工作流，例如将应用部署到 Vercel，就需要使用 Plugin。
 
-### 13.1 什么是 Plugin
+### 14.1 什么是 Plugin
 
 Plugin 可以理解为是给 Codex 增加额外能力的扩展。Codex 默认可以读取本地文件、修改代码、运行命令，但如果我们希望它进一步参与 GitHub、Vercel、Figma 等外部平台上的工作流，就可以通过 Plugin 扩展它的能力。
 
-### 13.2 Plugin 与 MCP 的区别 (TODO 与 skill 的区别)
+### 14.2 Plugin 与 MCP 的区别
 
 如果说 MCP 更偏向于让 Codex 连接工具和数据源，那么 Plugin 更像是为 Codex 安装一个面向具体产品或工作流的扩展能力。
 
@@ -718,7 +730,7 @@ Plugin 可以理解为是给 Codex 增加额外能力的扩展。Codex 默认可
 - 应用： 连接 GitHub、Slack、Google Drive 等工具，让 Codex 能读取这些工具中的信息，并在其中执行操作。
 - MCP server： 为 Codex 提供额外工具或共享上下文的服务，通常来自本地项目之外的系统。
 
-### 13.3 使用 Vercel Plugin 部署应用
+### 14.3 使用 Vercel Plugin 部署应用
 
 我们点击 Codex app 右侧功能区的 `Plugins`，然后在搜索 `Vercel` 插件，点击安装。安装完成后浏览器会自动弹出登录界面。
 
@@ -738,7 +750,7 @@ Plugin 可以理解为是给 Codex 增加额外能力的扩展。Codex 默认可
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
-## 十四、Automation
+## 十五、Automation
 
 你可以把重复性任务交给自动化任务在后台执行。
 
@@ -765,9 +777,9 @@ Automation 适合用于：
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
 
-## 十五、工作树 WorkTree
+## 十六、工作树 WorkTree
 
-### 15.1 什么是 WorkTree
+### 16.1 什么是 WorkTree
 
 工作树的概念源自于 Git。你可以将工作树理解为工作目录，也就是你能在磁盘中看到、能写代码的那个项目文件夹。
 
@@ -796,9 +808,9 @@ my-project-feature/  # 额外 worktree
 - 一个 WorkTree 用来尝试新的 UI 方案
 - 一个 WorkTree 用来验证某个实验性功能
 
-### 15.2 创建工作树
+### 16.2 创建工作树
 
-#### 15.2.1 Create permanent worktree
+#### 16.2.1 Create permanent worktree
 
 `Create permanent worktree` 是从**项目**创建一个长期存在的 worktree，并把它作为一个新的项目放到侧边栏里。
 
@@ -834,7 +846,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 <img src="./images/原目录没有被影响.png">
 
-#### 15.2.2 Fork into new worktree
+#### 16.2.2 Fork into new worktree
 
 > 这一小结写于2026年5月20日，`Fork into new worktree` 在 Codex app 中仍然存在 Bug，表现为 Codex 会新建 worktree，但是在 chat 列表中没有新增会话。所以这里我将只做简单的介绍。
 
@@ -844,7 +856,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 <img src="./images/Fork into new worktree.png">
 
-#### 15.2.5 Fork into local
+#### 16.2.5 Fork into local
 
 `Fork into local` 会将 Codex 对话复制一份，保留聊天上下文，但让新对话在你本地原项目目录里继续，而不是创建新的 worktree。
 
@@ -854,7 +866,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 <img src="./images/在任意位置fork.gif">
 
-#### 15.2.4 使用区别
+#### 16.2.4 使用区别
 
 如果你想为某个项目创建一个长期隔离环境，比如 appointment-demo-feature-a，以后经常进去、开多个聊天，那么就用 `Create permanent worktree`。
 
@@ -862,7 +874,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 如果你在 Codex 的里聊到一半，觉得这套上下文可以在项目目录中继续用，就可以用 `Fork into local`。
 
-### 15.4 合并
+### 16.4 合并
 
 如果你对结果满意，可以创建分支、提交、合并回主分支。
 
@@ -891,9 +903,6 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 你可以在主工作树中重新启动项目来查看有没有问题。
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
-
-
-
 
 ## Cloud
 
