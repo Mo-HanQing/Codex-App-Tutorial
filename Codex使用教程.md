@@ -1,7 +1,7 @@
 # Codex 使用教程
 
 >  Codex 英文文档：https://developers.openai.com/codex   
-Codex 中文文档：https://www.codex-docs.com/
+Codex 非官方中文文档：https://www.codex-docs.com/
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #007bff, transparent);">
 
@@ -40,7 +40,7 @@ Codex 可以辅助软件开发，包括开发新功能、修复错误、优化�
 
 ### 1.1 引入 Project
 
-在界面左侧的功能区中，你可以看到 `Project`，点击 `Project`，会出现 `从零开始` 和 `使用一个以存在的文件夹`，我已经创建了一个名为 `Codex Desktop Research` 的文件夹，所以在这里我将选择后者。
+在界面左侧的功能区中，你可以看到 `Project`，点击 `Project`，会出现 `从零开始` 和 `使用一个已存在的文件夹`，我已经创建了一个名为 `Codex Desktop Research` 的文件夹，所以在这里我将选择后者。
 
 <img src="./images/引入Project的位置.png"/>
 
@@ -123,7 +123,7 @@ Codex 可以辅助软件开发，包括开发新功能、修复错误、优化�
 
 ### 2.3 搜索 Chat
 
-你可以搜索 chat，注意到界面左上角有一个 `Search` 选项，单机这个选项，然后输入你想搜索的 chat 的标题，选择你的目标 chat。
+你可以搜索 chat，注意到界面左上角有一个 `Search` 选项，单击这个选项，然后输入你想搜索的 chat 的标题，选择你的目标 chat。
 
 <img src="./images/search.png" />
 
@@ -155,7 +155,7 @@ Codex 可以辅助软件开发，包括开发新功能、修复错误、优化�
 
 <img src="./images/模型选择.png" />
 
-你可以根据任务的复杂程度来选择合适的模型与推理强度，当然，更强的模型与更高的推理强度往往意味着要消耗更多的 Token 额度。
+你可以根据任务的复杂程度来选择合适的模型与推理强度，当然，更强的模型与更高的推理强度往往意味着要消耗更多的 Token 。
 
 你可以在页面的左下角的 `Settings` 中查看自己的剩余额度。
 
@@ -649,7 +649,7 @@ Codex 默认可以读取和修改本地项目文件、运行终端命令、分�
 
 ## 十二、Actions
 
-到目前位置，你可能已经厌烦了在终端中敲启动命令。
+到目前为止，你可能已经厌烦了在终端中敲启动命令。
 
 你可以用常用动作（actions）定义一些高频任务，例如启动开发服务器或运行测试，其意义在于减少反复输入那些常见命令。
 
@@ -705,7 +705,7 @@ Codex 默认可以读取和修改本地项目文件、运行终端命令、分�
 
 <img src="./images/comment.png">
 
-点击提交 Comment 后，可以看到这个 Comment 会被添加到输入框中，你可以发送这个消息，让 Codex 参考这个 Comment 今昔修改。
+点击提交 Comment 后，可以看到这个 Comment 会被添加到输入框中，你可以发送这个消息，让 Codex 参考这个 Comment 进行修改。
 
 <img src="./images/提交comment.png">
 
@@ -856,7 +856,7 @@ Codex 从当前 Git 分支/提交，也就是当前 HEAD，创建一个新的工
 
 <img src="./images/Fork into new worktree.png">
 
-#### 16.2.5 Fork into local
+#### 16.2.3 Fork into local
 
 `Fork into local` 会将 Codex 对话复制一份，保留聊天上下文，但让新对话在你本地原项目目录里继续，而不是创建新的 worktree。
 
